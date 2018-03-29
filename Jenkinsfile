@@ -5,9 +5,7 @@ pipeline {
       parallel {
         stage('test1') {
           steps {
-            sh '''#!/bin/bash
-
-uptime'''
+            sh 'hostname && uptime'
           }
         }
         stage('dfdff') {
@@ -17,7 +15,7 @@ uptime'''
         }
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'weak'
       }
