@@ -15,10 +15,5 @@ pipeline {
         }
       }
     }
-    stage('error') {
-      steps {
-        echo 'weak'
-      }
-    }
   }
 }
